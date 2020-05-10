@@ -35,3 +35,6 @@ Returns nothing.
    eraseexisting=True
 
    This example will erase all exising mbox files in C:\ARCHIVES\directory-kerby and then  download all of the mbox files from the Apache Kerby project into C:\ARCHIVES\directory-kerby.
+
+  # Known Issues
+  There is no error handling for network failures.
