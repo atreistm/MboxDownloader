@@ -1,8 +1,8 @@
 # MboxDownloader
-Python code to download Apache mail archives in mbox format
+Python code to download mail archives in mbox format
 
 # Background
-The Apache Software Foundation is the largest open source foundation, with over 350 projects and initiatives. A complete project list can be seen at http://www.apache.org/index.html#projects-list. Many of these projects have mail archives in the raw mbox format that can be viewed on http://mail-archives.apache.org/mod_mbox.
+Many mailing lists are stored in the mbox format. A good example is the Apache mail-archives. The Apache Software Foundation is the largest open source foundation, with over 350 projects and initiatives. A complete Apache project list can be seen at http://www.apache.org/index.html#projects-list. Many of these projects have mail archives in the raw mbox format that can be viewed on http://mail-archives.apache.org/mod_mbox.
 
 
 # Requirements
