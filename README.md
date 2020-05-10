@@ -34,4 +34,4 @@ Returns nothing.
    base directory is C:\ARCHIVES
    eraseexisting=True
 
-   The code will erase all exising mbox files in C:\ARCHIVES\directory-kerby and then  download all of the mbox files from the Apache Kerby project into C:\ARCHIVES\directory-kerby.
+   This example will erase all exising mbox files in C:\ARCHIVES\directory-kerby and then  download all of the mbox files from the Apache Kerby project into C:\ARCHIVES\directory-kerby.
