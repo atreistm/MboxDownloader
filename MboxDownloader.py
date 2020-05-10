@@ -44,8 +44,6 @@ def downloadmbox(siteurl, archivedirectory, eraseexisting=False):
             for f in files:
                 if os.path.splitext(f)[1] == '.mbox':
                     os.unlink(os.path.join(root, f))   
-        
-              
                                           
     res = requests.get(siteurl)                                                 #download archive page
     soup = bs4.BeautifulSoup(res.text, 'lxml')                                  #parse page
