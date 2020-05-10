@@ -8,7 +8,7 @@ Created on Sun May 10 14:37:28 2020
 import os
 import urllib.parse as urlparse
 import requests
-import bs4
+import bs4  #BeautifulSoup
 import wget
 
 
@@ -25,16 +25,15 @@ def downloadmbox(siteurl, archivedirectory, eraseexisting=False):
     name of the archive. 
     eraseexisting: If True, delete all .mbox files in destination subdirectory.
                    if False(Default), do not erase. Duplicate mbox files will be assigned unique names (by sequential numbering)
-    Example, siteurl is http://mail-archives.apache.org/mod_mbox/directory-kerby/
+    Example, 
+    downloadmbox('http://mail-archives.apache.org/mod_mbox/directory-kerby/', 'c:\\archives\\', True)
+    siteurl is http://mail-archives.apache.org/mod_mbox/directory-kerby/
     base directory is C:\ARCHIVES. 
     The code will download all of the mbox files from the Kerby project into C:\ARCHIVES\directory-kerby.
     
-    This code will not overwrite existing mbox files
-
     Returns
     -------
     None.
-
     """
     projectname =  urlparse.urlsplit(siteurl).path.strip('/').split('/')[-1]    # get last element of URL
     directory =  os.path.join(archivedirectory, projectname) 
@@ -56,6 +55,4 @@ def downloadmbox(siteurl, archivedirectory, eraseexisting=False):
         repo = os.path.join(directory,mboxname)
         wget.download(url, repo)
         
- #Usage       
-
-downloadmbox('http://mail-archives.apache.org/mod_mbox/directory-kerby/', 'd:\\archives\\', eraseexisting = False)
+ 
