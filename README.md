@@ -1,4 +1,4 @@
-# ApacheMailDownloader
+# MboxDownloader
 Python code to download Apache mail archives in mbox format
 
 # Background
