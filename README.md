@@ -35,4 +35,3 @@ Returns nothing.
    eraseexisting=True
 
    The code will erase all exising mbox files in C:\ARCHIVES\directory-kerby and then  download all of the mbox files from the Apache Kerby project into C:\ARCHIVES\directory-kerby.
-   Returns
