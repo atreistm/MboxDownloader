@@ -38,3 +38,4 @@ Returns nothing.
 
   # Known Issues
   There is no error handling for network failures.
+  The current code scrapes the names of mbox files from an Apache mail-archive page by looking for the HTML class "links". 
